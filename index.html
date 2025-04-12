@@ -8,10 +8,131 @@
 </head>
 <body><!-- Cuerpo del documento HTML -->
 <!-- Corresponde al contenido visual de la pagina web (Tablas, columnas, colores) -->
-    <h1>Mi primera página web</h1>
-    <h3>Carrera de computación</h3>
-    <h6>Edgar Tipán</h6>
-    <p>Este es el primer párrafo de mi página web...</p>
-    <button>Aceptar</button>
+    <header><!-- Se usa más para logos -->
+        <h1>Universidad Central del Ecuador</h1>
+        <h3>Carrera de Computación</h3>
+    </header> 
+    <nav></nav> 
+    <section>
+        <!-- Cabecera de secciones -->
+        <h1>Mi primera página web</h1>
+        <h6>Edgar Tipán</h6>
+
+        <!-- Elementos para párrafos -->
+        <p>Este es el primer párrafo de mi página web...</p>
+        <span>Párrafos más cortos</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam, repellendus animi consequuntur inventore tenetur neque minus adipisci est odit?</p>
+        
+        <hr>
+
+        <!-- Textos -->
+        <strong>Texto de importancia que quiero resaltar</strong>
+        <br><!-- Salto de linea -->
+        <b>Textos a los que no quiero darle relevancia</b>
+        <br>
+        <em>Texto en cursiva con importancia</em>
+        <br>
+        <i>Texto en cursiva</i>
+        <br>
+        <u>Texto subrayado</u>
+        <br>
+        <s>Texto eliminado</s>
+        <br>
+        <mark>Texto resaltado</mark>
+
+        <hr>
+
+        <!-- Listas -->
+        <ul>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ul>
+
+        <ol>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ol>
+
+        <hr>
+
+        <!-- Tablas -->
+        <table border="1">
+            <thead>
+                <tr><!-- Primero se declaran las filas -->
+                    <!-- Las columnas se declaran como contenido de la fila -->
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>CI</th>
+                    <th>Género</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Por cada fila, se declara un tr -->
+                <tr>
+                    <td>1</td>
+                    <td>Edgar</td>
+                    <td>Tipán</td>
+                    <td>1727326421</td>
+                    <td>Masculino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Daniela</td>
+                    <td>Terán</td>
+                    <td>1234567890</td>
+                    <td>Femenino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Contenedores (elementos que agrupan contenido) -->
+        <!-- Se deben agrupar elementos que tengan un mismo fin -->
+        <!-- Contenedores/agrupadores: header, nav, section -->
+        <div></div>
+        <br>
+
+        <hr>
+        
+        <!-- Elementos para formularios -->
+        <form action="">
+            <label for="id_nombre">Nombre</label><br>
+            <input type="text" id="id_nombre"><br>
+            <label for="id_password">Password</label><br>
+            <input type="password" id="id_password"><br>
+            <label for="id_fecha">Fecha de nacimiento</label><br>
+            <input type="date" id="id_fecha"><br>
+            <label for="id_edad">Edad</label><br>
+            <input type="number" id="id_edad"><br>
+            <button>Guardar</button>
+        </form>
+
+        <hr>
+        <br>
+
+        <!-- Multimedia -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="No se puede visualizar" width="400" height="400"><br>
+        <!-- en el SRC se puede poner una imagen local o de la web -->
+        <!-- el ALT es para cuando no sea factible renderizar la imagen -->
+
+        <br>
+
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+        <br>
+        <button>Aceptar</button>
+    </section>
+    <aside></aside>
+    <footer>
+        <h3>Todos los Derechos Reservados</h3>
+    </footer>
 </body>
 </html>
