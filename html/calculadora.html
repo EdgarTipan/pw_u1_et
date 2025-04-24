@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora UCE</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <label id="id_label_1" for="id_numero_1">Número 1</label>
+        <input id="id_numero_1" type="number">
+        <label id="id_label_2" for="id_numero_2">Número</label>
+        <input id="id_numero_2" type="number">
+        <button onclick="document.getElementById('id_label_1').style.background='blue'">Cambiar Color</button>
+        <button onclick="document.getElementById('id_label_2').innerText='Número 2'">Cambiar Texto</button>
+        <button onclick="document.getElementById('id_label_1').style.fontSize='40px'">Cambiar Tamaño</button>
+        <button onclick="document.getElementById('id_concatenar').innerText=document.getElementById('id_label_1').innerText + document.getElementById('id_label_2').innerText">Concatenar</button>
+        <label id="id_concatenar" for=""></label>
+    </section>
+    <aside></aside>
+    <footer>
+    </footer>
+</body>
+
+</html>

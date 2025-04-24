@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> src="../js/calculadora.js"</script>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora UCE</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <div id="id_espacio"></div>
+        <label id="id_label_1" for="id_numero_1">Número 1</label>
+        <input id="id_numero_1" type="number">
+        <label id="id_label_2" for="id_numero_2">Número</label>
+        <input id="id_numero_2" type="number">
+        <button onclick="cambiarColor('id_label_1','blue')">Cambiar Color 1</button>
+        <button onclick="cambiarColor('id_label_2','yellow')">Cambiar Color 2</button>
+        <button onclick="agregarBoton()">Agregar elemento</button>
+        <button id="id_error">Error</button>
+        <button ondblclick="eliminar('id_error')">Eliminar</button>
+    </section>
+    <aside></aside>
+    <footer>
+    </footer>
+</body>
+
+</html>
