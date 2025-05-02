@@ -4,9 +4,9 @@ function guardar() {
 
 function validar() {
     let nombre = document.getElementById("id_nombre").value;
-    if(nombre === ""){
+    if (nombre === "") {
         console.log("¡ERROR: No ha ingresado el nombre!");
-    }else{
+    } else {
         console.log("Pasó la validación del nombre");
     }
 }
